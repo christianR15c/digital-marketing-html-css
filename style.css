@@ -264,6 +264,67 @@ ul {
 
 /* ----- /closing gloabl classes ---- */
 
+
+/* ---- media queries --- */
+/* for large screen sm(640px) */
+@media (min-width:640px) {
+    .container {
+        width: 640px;
+    }
+}
+
+/* for large screen md(768px) */
+@media (min-width:768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/* for large screen md(1024px) */
+@media (min-width:1024px) {
+    .container {
+        width: 1024px;
+    }
+
+    #nav {
+        flex-direction: row !important;
+    }
+
+    #nav .toggle-btn>button {
+        display: none;
+    }
+
+    .collapse {
+        max-height: initial !important;
+    }
+
+    .collapse ul {
+        flex-direction: row !important;
+    }
+
+    .active {
+        max-height: 100% !important;
+    }
+}
+
+/* for large screen md(1280px) */
+@media (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+
+    #nav {
+        background: transparent !important;
+    }
+
+    #nav .flex-initial ul button {
+        display: flex !important;
+    }
+}
+
+/* ---- /closing media queries --- */
+
+
 /* --- navigation ---- */
 #nav {
     position: absolute;
@@ -277,6 +338,7 @@ ul {
 #nav .collapse {
     max-height: 0px;
     overflow-y: hidden;
+    transition: all 0.9s ease;
 }
 
 #nav .collapse ul {
@@ -300,4 +362,8 @@ ul {
 
 #nav .flex-initial ul button {
     display: none;
+}
+
+.active {
+    max-height: 50vh !important;
 }
