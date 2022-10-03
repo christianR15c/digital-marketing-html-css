@@ -498,3 +498,11 @@ ul {
 }
 
 /* ----- /closing card area styles ----- */
+
+/* ----- recent work area styles ----- */
+#site-main .recent-project-area .images-flex .felx-item {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* ----- /closing recent work area styles ----- */
