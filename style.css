@@ -500,9 +500,23 @@ ul {
 /* ----- /closing card area styles ----- */
 
 /* ----- recent work area styles ----- */
-#site-main .recent-project-area .images-flex .felx-item {
-    width: 100%;
+#site-main .recent-project-area .images-flex .flex-item {
+    width: 360px;
     margin-bottom: 50px;
+
+}
+
+#site-main .recent-project-area .images-flex .flex-item img {
+    border-radius: 10px;
+}
+
+#site-main .article-area .grid {
+    column-gap: 5em;
+    row-gap: 3em;
+}
+
+#site-main .article-area .card article {
+    border-radius: 10px;
 }
 
 /* ----- /closing recent work area styles ----- */
