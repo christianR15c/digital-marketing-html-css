@@ -277,6 +277,10 @@ ul {
     .sm-text-xl {
         font-size: 3em;
     }
+
+    .sm-px-10 {
+        padding: 0 3.5rem;
+    }
 }
 
 /* for large screen md(768px) */
@@ -510,6 +514,10 @@ ul {
     border-radius: 10px;
 }
 
+/* ----- /closing recent work area styles ----- */
+
+/* ----- article area ----- */
+
 #site-main .article-area .grid {
     column-gap: 5em;
     row-gap: 3em;
@@ -519,4 +527,13 @@ ul {
     border-radius: 10px;
 }
 
-/* ----- /closing recent work area styles ----- */
+/* ----- /closing article area ----- */
+
+/* ----- ready area ----- */
+#site-main .ready-area .flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ----- /closing ready area ----- */
