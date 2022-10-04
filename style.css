@@ -296,9 +296,13 @@ ul {
     .md-mx-initial {
         margin: initial;
     }
+
+    .md-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-/* for large screen md(1024px) */
+/* for large screen lg(1024px) */
 @media (min-width:1024px) {
     .container {
         width: 1024px;
@@ -331,9 +335,17 @@ ul {
     .lg-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .lg-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .lg-w-50 {
+        width: 50%;
+    }
 }
 
-/* for large screen md(1280px) */
+/* for large screen xl(1280px) */
 @media (min-width:1280px) {
     .container {
         width: 1280px;
@@ -537,3 +549,44 @@ ul {
 }
 
 /* ----- /closing ready area ----- */
+
+/* ----- footer ----- */
+#footer {
+    border-top: 2px solid var(--text-light);
+    margin-top: 6em;
+}
+
+#footer .grid {
+    column-gap: 3em;
+    padding: 6em 0;
+    border-bottom: 2px solid var(--text-light);
+}
+
+#footer .grid .subscribe-text {
+    border: none;
+    background-color: var(--text-light);
+    padding: 1em;
+    font-size: 1em;
+    color: var(--text-dark2);
+    font-family: var(--font-poppins);
+}
+
+#footer .grid .subscribe-text:focus {
+    border: none;
+    outline: none;
+}
+
+#footer .grid button.btn-go {
+    background-color: var(--text-light);
+    padding: 0 2em;
+    font-family: var(--font-poppins);
+    margin-left: 2px;
+}
+
+#footer .grid button.btn-go:hover {
+    background-color: var(--text-dark2);
+    color: var(--text-light);
+}
+
+
+/* ----- /closing footer ----- */
